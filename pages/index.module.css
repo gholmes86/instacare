@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ColfaxAI";
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2)
+      format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ColfaxAI";
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.main,
+.main input {
+  font-size: 16px;
+  line-height: 24px;
+  color: #353740;
+  font-family: "ColfaxAI", Helvetica, sans-serif;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+.main .icon {
+  width: 34px;
+}
+.main h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;
+  color: #202123;
+  margin: 16px 0 40px;
+}
+.main form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+.main input[type="text"] {
+  padding: 12px 16px;
+  /* border: 1px solid #10a37f; */
+  border-radius: 4px;
+  margin-bottom: 24px;
+  /* outline-color: #10a37f; */
+}
+.main ::placeholder {
+  color: #8e8ea0;
+  opacity: 1;
+}
+.main input[type="submit"] {
+  padding: 12px 0;
+  color: #fff;
+  background-color: #10a37f;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.main .result {
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.conversationContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  height: 50%;
+  overflow-y: scroll;
+}
+
+.messageContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 16px;
+  white-space: pre-line;
+}
+
+.userMessage{
+  background-color: lightblue;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  white-space: pre-line;
+}
+
+.botMessage{
+  background-color: lightgray;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  white-space: pre-line;
+}
+
+.inputContainer{
+  display: flex;
+  width: 80%;
+  max-width: 800px;
+  margin-top: 16px;
+}
+
+.inputField{
+  width: 100%;
+  height: 48px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px;
+}
+
+.submitButton{
+  width: 100px;
+  height: 48px;
+  margin-left: 8px;
+  font-size: 16px;
+  background-color: lightblue;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.table{
+  min-width: 650
+}
+.chatSection{
+  width: '100%';
+  height: '80vh'
+}
+.headBG{
+    background-color: '#e0e0e0'
+}
+.borderRight500{
+    border-right: '1px solid #e0e0e0'
+}
+.messageArea{
+  height: '70vh';
+  overflow-y: 'auto'
+}
+
+.Toastify__toast-container {
+  width: 320px;
+}
+.Toastify__toast--default {
+    background: #fff;
+    color: #aaa;
+ }
+  .Toastify__toast--info {
+    background: #3498db;
+ }
+  .Toastify__toast--success {
+    background: #07bc0c;
+ }
+  .Toastify__toast--warning {
+    background: #f1c40f;
+ }
+  .Toastify__toast--error {
+    background: #e74c3c;
+ }

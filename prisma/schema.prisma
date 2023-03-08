@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "./generated/prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:postgres@localhost:5432/instacare?schema=public"
+}
+
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  image String?
+}
+
+model Post {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  image String?
+}
